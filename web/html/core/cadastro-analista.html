@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <title>WebGestão - Cadastrar Analista</title>
+
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <header class="p-3 text-bg-dark">
+      <div class="container">
+        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+          <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+            <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"/></svg>
+          </a>
+          <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+            <li><a href="./inicio.html" class="nav-link px-2 text-secondary">Inicio</a></li>
+            <!--ao selecionar o botao Analista, abrir cadastro de novo-->
+            <li><a href="./cadastro-analista.html" class="nav-link px-2 text-white">Analista</a></li>
+            <!--ao selecionar o botao Cliente, abrir cadastro de novo-->
+            <li><a href="./cadastro-cliente.html" class="nav-link px-2 text-white">Cliente</a></li>
+            <!--ao selecionar o botao Checklist, abrir cadastro de novo-->
+            <li><a href="./cadastro-checklist.html" class="nav-link px-2 text-white">Cadastrar Checklist</a></li>
+            <!--ao selecionar o botao Grupos de Permissão, abrir vincular novo usuário a grupo-->
+            <li><a href="./cadastro-grupo-permissao.html" class="nav-link px-2 text-white">Grupos de  Permissão</a></li>
+          </ul>
+          <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="pesquisar">
+            <input type="pesquisar" class="form-control form-control-dark text-bg-dark" placeholder="Pesquisar..." aria-label="Pesquisar">
+          </form>
+          <div class="text-end">
+            <button type="button" class="btn btn-outline-light me-2">Sair</button>
+          </div>
+        </div>
+      </div>
+    </header>
+  <form class="cadastroAnalista">
+    <div class="divNomeAnalista">
+      <input type="inputNomeAnalista" class="form-control" placeholder="Nome" aria-label="divNomeAnalista">
+      <div id="divNomeAnalista" class="form-text"></div>
+    </div>
+    <div class="divEmailAnalista">
+        <input type="inputEmailAnalista" class="form-control" placeholder="Email" aria-label="divEmailAnalista">
+        <div id="divEmailAnalista" class="form-text"></div>
+    </div>
+    <div class="divTelefoneAnalista">
+        <input type="inputTelefoneAnalista" class="form-control" placeholder="Telefone" aria-label="divTelefoneAnalista">
+        <div id="divEmailAnalista" class="form-text"></div>
+    </div>
+    <div class="divRamalAnalista">
+        <input type="inputRamalAnalista" class="form-control" placeholder="Ramal" aria-label="divRamalAnalista">
+        <div id="diRamalAnalista" class="form-text"></div>
+    </div>
+    <div class="senha">
+      <input type="inputSenhaAnalista" class="form-control" placeholder="Senha">
+    </div>
+    <div class="Administrador">
+      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    </div>
+    <input type="vincularCliente" class="btn-primary" placeholder="Vincular ao Cliente..." aria-label="vincularCliente">
+    <button type="submit" class="btn btn-primary">Salvar</button>
+  </form>
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+      <p class="col-md-4 mb-0 text-muted">&copy; 2022 WebGestão</p>
+  </div>
+</main>
+</div>
+</div>
+</head>
+</html>
