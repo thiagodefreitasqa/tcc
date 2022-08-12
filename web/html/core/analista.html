@@ -15,13 +15,14 @@
           <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
             <li><a href="./inicio.html" class="nav-link px-2 text-secondary">Inicio</a></li>
             <!--ao selecionar o botao Analista, abrir cadastro de novo-->
-            <li><a href="./cadastro-analista.html" class="nav-link px-2 text-white">Analista</a></li>
+            <li><a href="./analista.html" class="nav-link px-2 text-white">Analista</a></li>
             <!--ao selecionar o botao Cliente, abrir cadastro de novo-->
-            <li><a href="./cadastro-cliente.html" class="nav-link px-2 text-white">Cliente</a></li>
+            <li><a href="./cliente.html" class="nav-link px-2 text-white">Cliente</a></li>
             <!--ao selecionar o botao Checklist, abrir cadastro de novo-->
-            <li><a href="./cadastro-checklist.html" class="nav-link px-2 text-white">Cadastrar Checklist</a></li>
+            <li><a href="./checklist.html" class="nav-link px-2 text-white">Checklist</a></li>
             <!--ao selecionar o botao Grupos de Permissão, abrir vincular novo usuário a grupo-->
-            <li><a href="./cadastro-grupo-permissao.html" class="nav-link px-2 text-white">Grupos de  Permissão</a></li>
+            <li><a href="./grupo-permissao.html" class="nav-link px-2 text-white">Grupos de  Permissão</a></li>
+            <li><a href="./produto.html" class="nav-link px-2 text-white">Produto</a></li>
           </ul>
           <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="pesquisar">
             <input type="pesquisar" class="form-control form-control-dark text-bg-dark" placeholder="Pesquisar..." aria-label="Pesquisar">
@@ -34,30 +35,26 @@
     </header>
 
 <main>
-    <form class="cadastroAnalista">
-    <div class="divNomeAnalista">
-      <input type="inputNomeAnalista" class="form-control" placeholder="Nome" aria-label="divNomeAnalista">
-      <div id="divNomeAnalista" class="form-text"></div>
+    <form>
+  <div class="row">
+    <div class="col">
+      <input type="text" class="form-control" placeholder="Nome">
     </div>
-    <div class="divEmailAnalista">
-        <input type="inputEmailAnalista" class="form-control" placeholder="Email" aria-label="divEmailAnalista">
-        <div id="divEmailAnalista" class="form-text"></div>
+    <div class="col">
+      <input type="text" class="form-control" placeholder="Sobrenome">
     </div>
-    <div class="divTelefoneAnalista">
-        <input type="inputTelefoneAnalista" class="form-control" placeholder="Telefone" aria-label="divTelefoneAnalista">
-        <div id="divEmailAnalista" class="form-text"></div>
+    <div class="col">
+      <input type="text" class="form-control" placeholder="Email">
     </div>
-    <div class="divRamalAnalista">
-        <input type="inputRamalAnalista" class="form-control" placeholder="Ramal" aria-label="divRamalAnalista">
-        <div id="diRamalAnalista" class="form-text"></div>
+    <div class="col">
+      <input type="text" class="form-control" placeholder="Telefone">
     </div>
-    <div class="senha">
-      <input type="inputSenhaAnalista" class="form-control" placeholder="Senha">
+    <div class="col">
+      <input type="text" class="form-control" placeholder="Ramal">
     </div>
-    <div class="Administrador">
-      <input type="checkbox" class="form-check-input" id="exampleCheck1">
-    </div>
-    <input type="vincularCliente" class="btn-primary" placeholder="Vincular ao Cliente..." aria-label="vincularCliente">
+  </div>
+</form>
+    <input type="text" class="btn-analista" placeholder="Vincular ao Cliente..." aria-label="vincularCliente">
     <button type="submit" class="btn btn-primary">Salvar</button>
   </form>
     <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
