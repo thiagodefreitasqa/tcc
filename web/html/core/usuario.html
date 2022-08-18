@@ -21,7 +21,7 @@
             <!--ao selecionar o botao Checklist, abrir cadastro de novo-->
             <li><a href="./checklist.html" class="nav-link px-2 text-white">Checklist</a></li>
             <!--ao selecionar o botao Grupos de Permissão, abrir vincular novo usuário a grupo-->
-            <li><a href="./grupo-permissao.html" class="nav-link px-2 text-white">Grupos de  Permissão</a></li>
+            <li><a href="./usuario.html" class="nav-link px-2 text-white">Usuário</a></li>
             <li><a href="./produto.html" class="nav-link px-2 text-white">Produto</a></li>
           </ul>
           <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="pesquisar">
@@ -34,23 +34,58 @@
       </div>
     </header>
 
-<main>
-  <h4>Vincular ao Grupo</h4>
-    <form action="">
+  <main>
+    <form>
+      <h4>Dados do Usuário</h4>
       <div class="row">
         <div class="col">
-          <input type="text" class="form-control" placeholder="Nome Produto">
-            <input type="checkbox" aria-label="Chebox para permitir input text">
-          </div>
+          <label for="">Nome</label>
+          <input type="text" class="form-control" id="primeiroNome" placeholder="" value="" required="">
+          <label for="">Sobrenome</label>
+          <input type="text" class="form-control" id="segundoNome" placeholder="" value="" required="">
         </div>
-        <input type="text" class="form-control" aria-label="Input text com checkbox">
+        <div class="col">
+          <label for="">E-mail</label>
+          <input type="text" class="form-control" id="email" placeholder="" value="" required="">
+        </div>
+        <div class="col">
+          <label for="">Telefone</label>
+          <input type="text" class="form-control" id="telefone" placeholder="" value="" required="">
+          <label for="">Ramal</label>
+          <input type="text" class="form-control" id="ramal" placeholder="" value="" required="">
+        </div>
+        <div class="toggle">
+          <div class="custom-control custom-switch">
+              <input type="checkbox"
+                     class="custom-control-input"
+                     id="toggleSwitches" />
+              <label class="custom-control-label"
+                     for="toggleSwitches">
+                Administrador
+            </label>
+          </div>
+      </div>
       </div>
     </form>
+      <form>
+        <h4>Vincular ao Cliente</h4>
+        <div class="row">
+          <div class="col">
+            <label for="">Selecione um Analista</label>
+            <select class="form-control form-control-sm">
+              <option>Nenhum</option>
+              <option>Cliente 1</option>
+              <option>Cliente 2</option>
+              <option>Cliente 3</option>
+            </select>
+            <button type="submit" class="btn btn-primary">Salvar</button>
+          </div>
+       </div>
+      </form>
+      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <p class="col-md-4 mb-0 text-muted">&copy; 2022 WebGestão</p>
+    </div>
 
-  <button type="submit" class="btn btn-primary">Salvar</button>
-    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-      <p class="col-md-4 mb-0 text-muted">&copy; 2022 WebGestão</p>
-  </div>
 </main>
 </head>
 </html>

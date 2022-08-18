@@ -21,7 +21,7 @@
             <!--ao selecionar o botao Checklist, abrir cadastro de novo-->
             <li><a href="./checklist.html" class="nav-link px-2 text-white">Checklist</a></li>
             <!--ao selecionar o botao Grupos de Permissão, abrir vincular novo usuário a grupo-->
-            <li><a href="./grupo-permissao.html" class="nav-link px-2 text-white">Grupos de  Permissão</a></li>
+            <li><a href="./usuario.html" class="nav-link px-2 text-white">Usuário</a></li>
             <li><a href="./produto.html" class="nav-link px-2 text-white">Produto</a></li>
           </ul>
           <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="pesquisar">
@@ -33,40 +33,72 @@
         </div>
       </div>
     </header>
-    <main>
-      <h3>Cadastrar Cliente</h3>
       <main>
         <form>
       <div class="row">
         <div class="col">
-          <input type="text" class="form-control" placeholder="Id Contrato*">
+          <h5>Informações de Contrato</h5>
+          <label for="">Número do Contrato</label>
+          <input type="text" class="form-control" placeholder="" value="" required="">
+          <label for="">Produto Contratado</label>
+          <select class="form-control form-control-sm">
+            <option>...</option>
+            <option>Produto 1</option>
+            <option>Produto 2</option>
+            <option>Produto 3</option>
+            <option>Produto 4</option>
+            
+          </select>
+          
         </div>
         <div class="col">
-          <input type="text" class="form-control" placeholder="Razao Social Empresa">
+        <div class="col">
+          <h5>Dados Cadastrais</h5>
+          <label for="">Nome Empresa</label>
+          <input type="text" class="form-control" id="nomeEmpresa" placeholder="" value="" required="">
         </div>
         <div class="col">
-          <input type="text" class="form-control" placeholder="Cnpj Contratante">
+          <label for="">CNPJ Contratante</label>
+          <input type="text" class="form-control" id="cnpjContratante" placeholder="" value="" required="">
         </div>
         <div class="col">
-          <input type="text" class="form-control" placeholder="Quantidade Filiais">
-        </div>
-        <div class="col">
-          <input type="text" class="form-control" placeholder="Responsável Cliente">
-        </div>
-        <div class="col">
-          <input type="text" class="form-control" placeholder="Telefone Responsável">
-        </div>
-        <div class="col">
-          <input type="text" class="form-control" placeholder="Email Responsável">
+          <label for="">Quantidade Filiais</label>
+          <input type="text" class="form-control" id="quantidadeFilial" placeholder="" value="" required="">
         </div>
       </div>
+      <div class="col">
+      <h5>Informações do Responsável Empresa</h5>
+        <div class="col">
+          <label for="">Nome Responsável</label>
+          <input type="text" class="form-control" id="nomeResponsavel" placeholder="" value="" required="">
+        </div>
+        <div class="col">
+          <label for="">Telefone Contato</label>
+          <input type="text" class="form-control" id="telefoneContato" placeholder="" value="" required="">
+        </div>
+        <div class="col">
+          <label for="">E-mail Responsável</label>
+          <input type="text" class="form-control" id="emailResponsavel" placeholder="" value="" required="">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <h5>Vincular ao Analista</h5>
+          <label for="">Selecione um Analista</label>
+          <select class="form-control form-control-sm">
+            <option>Nenhum</option>
+            <option>Analista 1</option>
+            <option>Analista 2</option>
+            <option>Analista 3</option>
+            <option>Analista 4</option>
+          </select>
+          <button type="submit" class="btn btn-primary">Salvar</button>
+        </div>
+     </div>
     </form>
-        <input type="text" class="btn-primary" placeholder="Vincular ao Analista..." aria-label="vincularAnalista">
-        <button type="submit" class="btn btn-primary">Salvar</button>
-      </form>
         <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
           <p class="col-md-4 mb-0 text-muted">&copy; 2022 WebGestão</p>
-      </div>
     </main>
+
 </head>
 </html>

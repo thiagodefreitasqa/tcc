@@ -1,8 +1,11 @@
 videos para desenvolver o trabalho de tcc
 
-1 - https://www.youtube.com/watch?v=nU2Lpy79Q3M -> ok
-2 -https://www.youtube.com/watch?v=jze3TasX5DA&t=16s
+Playlist:
+https://www.youtube.com/playlist?list=PLVSNL1PHDWvS1e1aeoJV7VvaDZ9m67YPU
+
 
 senha admin banco: Io#L4*F2PX*!Dm5%
 
-deixar checklists pré cadastrados, já vinculados a determinado tipo de implantação.
+nome usuario ubuntu wsl: thiago
+senha: P@ssw0rd160219
+pasta de rede máquina virtual distro: \\wsl$\Ubuntu

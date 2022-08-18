@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>WebGestão - Analista</title>
+    <title>WebGestão - Produto</title>
     <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
     
     <header class="p-3 text-bg-dark">
@@ -21,7 +21,7 @@
             <!--ao selecionar o botao Checklist, abrir cadastro de novo-->
             <li><a href="./checklist.html" class="nav-link px-2 text-white">Checklist</a></li>
             <!--ao selecionar o botao Grupos de Permissão, abrir vincular novo usuário a grupo-->
-            <li><a href="./grupo-permissao.html" class="nav-link px-2 text-white">Grupos de  Permissão</a></li>
+            <li><a href="./usuario.html" class="nav-link px-2 text-white">Usuário</a></li>
             <li><a href="./produto.html" class="nav-link px-2 text-white">Produto</a></li>
           </ul>
           <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="pesquisar">
@@ -39,25 +39,35 @@
     <form>
       <div class="row">
         <div class="col">
-          <input type="text" class="form-control" placeholder="Nome">
+          <label for="">Nome</label>
+          <input type="text" class="form-control" id="nomeChecklist" placeholder="" value="" required="">
+          <label for="">Vincular ao Produto</label>
+          <div class="row">
+            <div class="col">
+              <select class="form-control form-control-sm">
+                <option>Nenhum</option>
+                <option>produto 1</option>
+                <option>Checklist 2</option>
+                <option>Checklist 3</option>
+              </select>
+            </div>
+         </div>
         </div>
         <div class="col">
-          <input type="text" class="form-control" placeholder="Tipo">
-        </div>
-        <div class="col">
-          <input type="text" class="form-control" placeholder="Projeto">
-        </div>
-        <div class="col">
-          <input type="text" class="form-control" placeholder="Vincular ao Projeto">
-        </div>
-        <div><input type="text" class="btn-checklist" placeholder="Pesquisar Checklist.." aria-label="vincularCliente"></div>
-        <div class="custom-file">
-          <input type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
-          <label class="custom-file-label" for="inputGroupFile01">Importar Checklist</label>
-        </div>
-      </div>
+          <label for="">Tipo Produto</label>
+          <div class="row">
+            <div class="col">
+              <select class="form-control form-control-sm">
+                <option>Nenhum</option>
+                <option>doc eletronico</option>
+                <option>hardware</option>
+                <option>Todos</option>
+              </select>
+            </div>
+         </div>
+        <button type="submit" class="btn btn-primary">Salvar</button>
   </form>
-  <button type="submit" class="btn btn-primary">Salvar</button>
+  
     <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
       <p class="col-md-4 mb-0 text-muted">&copy; 2022 WebGestão</p>
   </div>
