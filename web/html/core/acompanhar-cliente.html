@@ -38,64 +38,33 @@
         <form>
       <div class="row">
         <div class="col">
-          <h5>Informações de Contrato</h5>
-          <label for="">Número do Contrato</label>
-          <input type="text" class="form-control" placeholder="" value="" required="">
-          <label for="">Produto Contratado</label>
-          <select class="form-control form-control-sm">
-            <option>...</option>
-            <option>Produto 1</option>
-            <option>Produto 2</option>
-            <option>Produto 3</option>
-            <option>Produto 4</option>
-            
-          </select>
-          
+          <label for="">Responsável</label>
+          <input type="text" class="form-control" id="nomeAnalista" placeholder="nome analista Responsável" value="" required="">
         </div>
         <div class="col">
-        <div class="col">
-          <h5>Dados Cadastrais</h5>
-          <label for="">Nome Empresa</label>
-          <input type="text" class="form-control" id="nomeEmpresa" placeholder="" value="" required="">
-        </div>
-        <div class="col">
-          <label for="">CNPJ Contratante</label>
-          <input type="text" class="form-control" id="cnpjContratante" placeholder="" value="" required="">
+          <label for="">Nome Cliente</label>
+          <input type="text" class="form-control" id="razaoSocialEmpresa" placeholder="razão social do cliente" value="" readonly>
         </div>
         <div class="col">
           <label for="">Quantidade Filiais</label>
-          <input type="text" class="form-control" id="quantidadeFilial" placeholder="" value="" required="">
-        </div>
-      </div>
-      <div class="col">
-      <h5>Informações do Responsável Empresa</h5>
-        <div class="col">
-          <label for="">Nome Responsável</label>
-          <input type="text" class="form-control" id="nomeResponsavel" placeholder="" value="" required="">
-        </div>
-        <div class="col">
-          <label for="">Telefone Contato</label>
-          <input type="text" class="form-control" id="telefoneContato" placeholder="" value="" required="">
-        </div>
-        <div class="col">
-          <label for="">E-mail Responsável</label>
-          <input type="text" class="form-control" id="emailResponsavel" placeholder="" value="" required="">
+          <input type="text" class="form-control" id="quantidadeFilial" placeholder="nome do cliente" value="" required="">
         </div>
       </div>
       <div class="row">
         <div class="col">
-          <h5>Vincular ao Analista</h5>
-          <label for="">Selecione um Analista</label>
-          <select class="form-control form-control-sm">
-            <option>Nenhum</option>
-            <option>Analista 1</option>
-            <option>Analista 2</option>
-            <option>Analista 3</option>
-            <option>Analista 4</option>
-          </select>
-          <button type="submit" class="btn btn-primary">Salvar</button>
+            <label for="">Produto Contratado</label>
+            <input type="text" class="form-control" id="produtoContratado" placeholder="produto contratado pelo cliente" value="" required="">
         </div>
-     </div>
+        <div class="col">
+            <label for="">Nome Contato</label>
+            <input type="text" class="form-control" id="nomeContatoCliente" placeholder="nome contato do cliente" value="" required="">
+        </div>
+        <div class="col">
+            <label for="">Telefone</label>
+            <input type="text" class="form-control" id="telefoneContatoCliente" placeholder="telefone contato do cliente" value="" required="">
+        </div>
+    </div>
+
     </form>
         <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
           <p class="col-md-4 mb-0 text-muted">&copy; 2022 WebGestão</p>
