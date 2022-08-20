@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <title>WebGestão - Cliente</title>
+
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="../assets/dist/css/style.css"> -->
+    
+    <header class="p-3 text-bg-dark">
+      <div class="container">
+        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+          <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+            <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"/></svg>
+          </a>
+          <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+            <li><a href="./inicio.html" class="nav-link px-2 text-secondary">Inicio</a></li>
+            <!--ao selecionar o botao Analista, abrir cadastro de novo-->
+            <li><a href="./analista.html" class="nav-link px-2 text-white">Analista</a></li>
+            <!--ao selecionar o botao Cliente, abrir cadastro de novo-->
+            <li><a href="./cliente.html" class="nav-link px-2 text-white">Cliente</a></li>
+            <!--ao selecionar o botao Checklist, abrir cadastro de novo-->
+            <li><a href="./checklist.html" class="nav-link px-2 text-white">Checklist</a></li>
+            <!--ao selecionar o botao Grupos de Permissão, abrir vincular novo usuário a grupo-->
+            <li><a href="./usuario.html" class="nav-link px-2 text-white">Usuário</a></li>
+            <li><a href="./produto.html" class="nav-link px-2 text-white">Produto</a></li>
+          </ul>
+          <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="pesquisar">
+            <input type="pesquisar" class="form-control form-control-dark text-bg-dark" placeholder="Pesquisar..." aria-label="Pesquisar">
+          </form>
+          <div class="text-end">
+            <button type="button" class="btn btn-outline-light me-2">Sair</button>
+          </div>
+        </div>
+      </div>
+    </header>
+      <main>
+        <form>
+      <div class="row">
+        <div class="col">
+          <label for="">Analista Responsável</label>
+          <input type="text" class="form-control" id="nomeAnalista" placeholder="nome analista Responsável" value="" readonly>
+          <label for="">Razão Social Empresa</label>
+          <input type="text" class="form-control" id="razaoSocialEmpresa" placeholder="razão social do cliente" value="" readonly>
+        </div>
+        <div class="col">
+          <label for="">Quantidade Filiais</label>
+          <input type="text" class="form-control" id="quantidadeFilial">
+          <label for="">Produto Contratado</label>
+          <input type="text" class="form-control" id="produtoContratado" placeholder="Pacote 1 (NFe Emissão, NFe Recepção)" value="" readonly>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+            <label for="">Nome Contato</label>
+            <input type="text" class="form-control" id="nomeContatoCliente" placeholder="nome contato do cliente" value="" required="">
+        </div>
+        <div class="col">
+            <label for="">Telefone</label>
+            <input type="text" class="form-control" id="telefoneContatoCliente" placeholder="telefone contato do cliente" value="" required="">
+            <label for="">Situação Cliente</label>
+            <select class="form-control form-control-sm">
+              <option>...</option>
+              <option>Em Migração</option>
+              <option>Cancelado</option>
+              <option>Não Iniciado</option>
+              <option>Pausado</option>           
+            </select>
+          </div>
+    </div>
+     </form>
+    <!-- inicio da tabela checklist vinculada ao cliente com os produtos contratados por ele -->
+    <!-- este traço pode ser uma barra de evolução conforme vai sendo marcado o item Validado, situação deve estar com Em Migração -->
+    <footer class="d-flex flex-wrap justify-content-center align-items-center py-5 my-4 border-top">
+      <div class="table-responsive">
+        <table class="table table-striped table-sm">
+          <thead>
+            <tr>
+              <th scope="col">Ordem</th>
+              <th scope="col">Descritivo Validação</th>
+              <th scope="col">Local Validação</th>
+              <th scope="col">Validado</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- cada conjunto deste (<tr><td></td></tr>) refere-se
+            a um cliente -->
+            <tr>
+              <td>1</td>
+              <td>
+                <div type="text" class="toggle" data-toggle="tooltip" data-placement="top" title="Cadastrar Licença seguindo os dados passados inicialmente">
+                  Cadastrar Licença
+                </div>
+                <!-- a div toggle tooltip trata das informações completas que são mostradas ao passar o mouse por cima do texto -->
+              </td>
+              <td>Portal Web Produção</td>
+              <td><div class="toggle"><div class="custom-control custom-switch"><input type="checkbox" class="custom-control-input" id="validadoItemCliente" /> </div>
+              </td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>
+                <div class="toggle" data-toggle="tooltip" data-placement="left"  title="Validar se o CNPJ da empresa esta vinculado a uma licença">
+                  Validar CNPJ da Empresa
+                </div>
+              </td>
+              <td>Portal Web Produção</td>
+              <td><div class="toggle"><div class="custom-control custom-switch"><input type="checkbox" class="custom-control-input" id="validadoItemCliente" /> </div>
+              </td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>
+                <div class="toggle" data-toggle="tooltip" data-placement="left" title="Validar a quantidade de documentos migrados (NFe, CTe)">
+                  Validar Quantidade de Documentos
+                </div>
+                
+
+              </td>
+              <td>Portal Web Produção</td>
+              <td><div class="toggle"><div class="custom-control custom-switch"><input type="checkbox" class="custom-control-input" id="validadoItemCliente" /> </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+  <!--fim da tabela-->   
+    </main>
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+      <p class="col-md-4 mb-0 text-muted">&copy; 2022 WebGestão</p>
+</head>
+</html>
